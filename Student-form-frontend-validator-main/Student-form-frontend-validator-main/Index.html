@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <style>
+    .error {
+      border: 2px solid red;
+    }
+    .valid {
+      border: 2px solid green;
+    }
+    .disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <h2>Student Registration Form</h2>
+  <form id="registrationForm">
+    <label>
+      Name: <input type="text" id="name">
+    </label><br><br>
+    <label>
+      Email: <input type="email" id="email">
+    </label><br><br>
+    <label>
+      Age: <input type="number" id="age">
+    </label><br><br>
+    <label>
+      Mobile Number: <input type="text" id="mobile">
+    </label><br><br>
+    <button type="submit" id="submitBtn" class="disabled" disabled>Submit</button>
+  </form>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
