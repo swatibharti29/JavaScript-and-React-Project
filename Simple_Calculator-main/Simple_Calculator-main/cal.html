@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <style>
+            th{
+                font-size: 29px;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+        <thead>
+                <tr>
+                    <th colspan="4" id="display">&nbsp;</th>
+                </tr>
+                </thead>
+
+                <tr>
+                    <td onclick="clearDisplay()">AC</td>
+                    <td onclick="appendOperator('(')">( )</td>
+                    <td onclick="appendOperator('%')">%</td>
+                    <td onclick="appendOperator('/')">➗</td>
+                </tr>
+            <tbody>
+            <tr>
+                <td onclick="appendNumber('7')">7️⃣</td>
+                <td onclick="appendNumber('8')">8️⃣</td>
+                <td onclick="appendNumber('9')">9️⃣</td>
+                <td onclick="appendOperator('*')">✖️</td>
+            </tr>
+            <tr>
+                <td onclick="appendNumber('4')">4️⃣</td>
+                <td onclick="appendNumber('5')">5️⃣</td>
+                <td onclick="appendNumber('6')">6️⃣</td>
+                <td onclick="appendOperator('-')">➖</td>
+            </tr>
+            <tr>
+                <td onclick="appendNumber('1')">1️⃣</td>
+                <td onclick="appendNumber('2')">2️⃣</td>
+                <td onclick="appendNumber('3')">3️⃣</td>
+                <td onclick="appendOperator('+')" >➕</td>
+            </tr>
+            <tr>
+                <td onclick="appendNumber('0')">0️⃣</td>
+                <td onclick="appendDot()">🔸</td>
+                <td onclick="backspace()">🔙</td>
+                <td onclick="calculate()">🟰</td>
+            </tr>
+            </tbody>
+        </table>
+        <script src="scripts.js"></script>
+    </body>
+
+</html>
